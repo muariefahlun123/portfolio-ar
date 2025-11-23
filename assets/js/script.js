@@ -171,7 +171,7 @@ const allProjects = {
 	},
 };
 
-// ========================================================================= KODE FUNGSI UTAMA  ========================================================================//
+// ================================================================================== KODE FUNGSI UTAMA  =================================================================================//
 
 (function ($) {
 "use strict";
@@ -200,7 +200,7 @@ $(document).ready(function () {
 });
 
 
-// 2. ================================================================ KODE MEMUAT DATA PROYEK SECARA DINAMIS  =======================================================//
+// 2. ========================================================================== KODE MEMUAT DATA PROYEK SECARA DINAMIS  ===============================================================//
 
     if ($('#project-client').length) { 
 
@@ -245,7 +245,7 @@ $(document).ready(function () {
         $('#project-details-content').html(projectData.detailsHtml);
 		
 
-// ==================================================================== LOGIKA BARU UNTUK TOMBOL PREV/NEXT ================================================================//
+// ========================================================================= LOGIKA BARU UNTUK TOMBOL PREV/NEXT ======================================================================//
 
     const prevButton = $('#prev-project-btn');
     const nextButton = $('#next-project-btn');
@@ -284,7 +284,7 @@ $(document).ready(function () {
         nextButton.off('click'); // Hapus event listener sebelumnya (jika ada)
         }
 
-// ============================================================ AKHIR LOGIKA PREV/NEXT ===============================================================//
+// =========================================================================== AKHIR LOGIKA PREV/NEXT ============================================================================//
 
     } else {
         // Opsional: Tampilkan pesan jika ID proyek tidak ditemukan atau salah ketik
@@ -292,7 +292,7 @@ $(document).ready(function () {
     }
 }
 
-// ============================================================ AKHIR DARI KODE DINAMIS===================================================================//
+// ========================================================================= AKHIR DARI KODE DINAMIS=======================================================================================//
 
   }); // <-- Akhir dari $(document).ready()
 
@@ -354,7 +354,7 @@ $(".article-publications-slider").slick({
     settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-    	}
+        }
     },]
 });
 
@@ -376,10 +376,8 @@ let h = now.getHours();
 	const m = now.getMinutes();
 	const s = now.getSeconds();
 	const ampm = h >= 12 ? 'PM' : 'AM';
-
 	h = h % 12 || 12;
 
-// PERBAIKAN: Tambahkan pengecekan agar tidak error di halaman lain
 
 if (document.getElementById('hours')) {
     document.getElementById('hours').textContent = String(h).padStart(2, '0');
@@ -389,8 +387,54 @@ if (document.getElementById('hours')) {
 	}
 }
 
-// PERBAIKAN: Hanya jalankan jam jika elemennya ada di halaman
 if (document.getElementById('hours')) {
 	setInterval(updateClockWidget, 1000);
 	updateClockWidget();
 }
+
+// ===================================================================== PORTFOLIO MAP ===============================================================================================//
+
+window.addEventListener("load", function () {
+const mapContainer = document.getElementById("projectsMap");
+if (!mapContainer) return;
+
+const projectLocations = [
+    { id: "proyek1", title: "FlowArch - Architecture Service Website", lat: -6.175392,          lng: 106.827153 },
+    { id: "proyek2", title: "FlowSaaS - SaaS Application Tools",       lat: -7.250445,          lng: 112.768845 },
+    { id: "proyek3", title: "AIMug - AI Writing Application Tools",    lat: -7.797068,          lng: 110.370529 },
+    { id: "proyek4", title: "AIMug - Aceh Project",                    lat: 4.271756723904168,  lng: 97.2123131856845 },
+];
+
+const map = L.map("projectsMap", {
+    zoomControl: true,
+    scrollWheelZoom: true,
+}).setView([-4.902855966527533, 109.73672719899567], 1);
+
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    minZoom: 5,
+    maxZoom: 18,
+    attribution: "&copy; OpenStreetMap",
+}).addTo(map);
+
+
+projectLocations.forEach((p) => {
+    L.marker([p.lat, p.lng])
+            .addTo(map)
+            .bindPopup(`
+            <b>${p.title}</b><br/>
+            <a href="portfolio-details.html?id=${p.id}">View detail</a>
+        `);
+});
+
+function fixMapSize(){ map.invalidateSize(true); }
+fixMapSize();
+setTimeout(fixMapSize, 200);
+setTimeout(fixMapSize, 600);
+window.addEventListener("resize", fixMapSize);
+
+// Auto zoom ke semua marker
+if (projectLocations.length > 1) {
+        const bounds = L.latLngBounds(projectLocations.map(p => [p.lat, p.lng]));
+        map.fitBounds(bounds, { padding: [30, 30] });
+    }
+});
