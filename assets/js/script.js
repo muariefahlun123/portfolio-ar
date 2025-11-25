@@ -387,13 +387,13 @@ $(".article-publications-slider").slick({
     },]
 });
 
-// ========================================================== PERBAIKAN: Inisialisasi Magnific Popup (Galeri Gambar) ============================================================//
+// ================================================================= PERBAIKAN: Inisialisasi Magnific Popup (Galeri Gambar) ===============================================================//
 
 $(".parent-container").magnificPopup({
-    delegate: "a.gallery-popup", // cari link dengan class 'gallery-popup'
-    type: "image", // tipe konten adalah gambar
+    delegate: "a.gallery-popup",
+    type: "image", 
     gallery: {
-      enabled: true, // aktifkan mode galeri (agar bisa slide)
+    enabled: true,
     },
 });
 
@@ -421,7 +421,7 @@ if (document.getElementById('hours')) {
 	updateClockWidget();
 }
 
-// ================================================================= PORTFOLIO MAP ===============================================================================//
+// =================================================================================== PORTFOLIO MAP ===================================================================================//
 
 window.addEventListener("load", function () {
     const mapContainer = document.getElementById("projectsMap");
@@ -441,7 +441,7 @@ const projectLocations = [
 const osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     minZoom: 4,
     maxZoom: 19,
-    attribution: "&copy; OpenStreetMap contributors",
+    attribution: "",
 });
 
 const googleSatellite = L.tileLayer(
@@ -449,7 +449,7 @@ const googleSatellite = L.tileLayer(
     {
     minZoom: 4,
     maxZoom: 19,
-    attribution: "&copy; Google",
+    attribution: "",
     }
 );
 
@@ -458,14 +458,14 @@ const googleStreet = L.tileLayer(
     {
     minZoom: 4,
     maxZoom: 19,
-    attribution: "&copy; Google",
+    attribution: "",
     }
 );
 
 const esriSatellite = L.tileLayer(
     "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
     { maxZoom: 19, 
-    attribution: "Tiles &copy; Esri" }
+    attribution: "" }
 );
 
 
