@@ -1809,36 +1809,25 @@ p {
 	display: block;
 }
 
-
-/* ================== FIX PROJECT MAP SIZE ================== */
-
-/* Matikan efek height:100% dari .card global */
 .portfolio-map .card,
 .portfolio-map .card-body{
-  height: auto !important;
-  min-height: 0 !important;
+	height: auto !important;
+	min-height: 0 !important;
 }
 
 /* Ukuran map fix (sedang) */
 #projectsMap{
-  width: 100% !important;
-  height: 360px !important;      /* kamu bisa ubah 320-420px */
-  max-height: 360px !important;
-  border-radius: 12px;
-  overflow: hidden;
+	width: 100% !important;
+	height: 360px !important;      /* kamu bisa ubah 320-420px */
+	max-height: 360px !important;
+	border-radius: 12px;
+	overflow: hidden;
 }
 
-/* Leaflet wajib ikut ukuran container */
 .leaflet-container{
-  width: 100% !important;
-  height: 100% !important;
+	width: 100% !important;
+	height: 100% !important;
 }
-
-
-
-
-
-
 
 .portfolio-details-area .main-image {
 	border-radius: 10px;
