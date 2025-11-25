@@ -12,7 +12,7 @@ const allProjects = {
     overview: "Ini adalah deskripsi singkat untuk proyek kedua. Ganti dengan overview Anda.",
     img1: "assets/img/projects/project-details-2.png", 
     img2: "assets/img/projects/project-details-3.png", 
-    mainImageUrl: "assets/img/projects/project-1.png", 
+    mainImageUrl: "assets/img/projects/NirwanaHill.png", 
     
 
     detailsHtml: `
@@ -475,7 +475,7 @@ const map = L.map("projectsMap", {
     scrollWheelZoom: true,
     minZoom: 2,
     maxZoom: 4.5,
-    layers: [osm], 
+    layers: [esriSatellite], 
 });
 
   // =================== MARKERS ===================
@@ -496,8 +496,8 @@ if (projectLocations.length > 0) {
 }
 
 const baseMaps = {
-    "OpenStreetMap": osm,
     "Esri Satellite":esriSatellite,
+    "OpenStreetMap": osm,
     "Google Satellite": googleSatellite,
     "Google Street": googleStreet,
 };
