@@ -8,10 +8,10 @@ const allProjects = {
     client: "Nirwana Hills Serpong",
     services: "Photogrammetry",
     videoUrl: null,
-    webUrl: "null",
+    webUrl: "https://monitoring-project-rho.vercel.app",
     overview: "Ini adalah deskripsi singkat untuk proyek kedua. Ganti dengan overview Anda.",
-    img1: "assets/img/projects/project-details-2.png", 
-    img2: "assets/img/projects/project-details-3.png", 
+    img1: "assets/img/projects/NirwanaHill1.png", 
+    img2: "assets/img/projects/NirwanaHill2.png", 
     mainImageUrl: "assets/img/projects/NirwanaHill.png", 
     
 
@@ -39,7 +39,7 @@ const allProjects = {
     client: "PT Moya Indonesia",
     services: "Product Design, and Development",
     videoUrl: "https://www.youtube.com/embed/ScQllP5L6HE",
-    webUrl: "https://www.youtube.com/watch?v=ScQllP5L6HE", 
+    webUrl: "https://www.google.com/maps/d/u/0/viewer?mid=1U17hBxpj1fRdctK1vZIwymRZa-h4c-k&ll=-7.1674715247373255%2C111.87734117480468&z=10", 
     overview: "Web design encompasses the process of creating and designing websites It involves a combination of different skills and disciplines to produce a visually appealing and user-friendly website. Here's an overview of key aspects of web design.",
     img1: "assets/img/projects/project-details-2.png",
     img2: "assets/img/projects/project-details-3.png",
