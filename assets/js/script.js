@@ -9,27 +9,31 @@ const allProjects = {
     services: "Photogrammetry",
     videoUrl: null,
     webUrl: "https://monitoring-project-rho.vercel.app",
-    overview: "Ini adalah deskripsi singkat untuk proyek kedua. Ganti dengan overview Anda.",
+    overview: "The Orthophoto Nirwana Hill Serpong project involved aerial data acquisition over an 18-hectare area using a DJI Phantom 4 Pro V2. The flight mission was planned with a structured mapping strategy to ensure optimal overlap and high-quality photogrammetry results. The project produced a 2.1 cm/pixel orthomosaic, along with a Digital Surface Model (DSM) and Digital Elevation Model (DEM) to support topographic analysis, construction planning, and site monitoring.",
     img1: "assets/img/projects/NirwanaHill1.png", 
     img2: "assets/img/projects/NirwanaHill2.png", 
-    mainImageUrl: "assets/img/projects/NirwanaHill.png", 
+    mainImageUrl: "assets/img/projects/NirwanaHill.png",
     
 
     detailsHtml: `
 	<h3 class="more-info-title">Challenges</h3>
-    <p>Tantangan untuk Proyek 2 SANGAT BERBEDA. Kami harus mengintegrasikan data drone...</p>
-    <h5 class="more-info-subtitle">Integrasi Data:</h5>
+    <p>The challenges in Project were significantly more complex. We had to integrate drone data from multiple flight missions, ensure consistent elevation accuracy across all datasets, and manage the large high-resolution orthomosaic files to keep them efficient and fully optimized for WebGIS visualization.</p>
+    <h5 class="more-info-subtitle">Data Integration :</h5>
     <ul class="list-unstyled">
-        <li><b>Challenge:</b> Data drone dari berbagai penerbangan tidak sinkron.</li>
-        <li><b>Solution:</b> Menggunakan script Python untuk otomatisasi dan GCP terukur.</li>
+        <li>The primary challenge in this project was that drone imagery captured across multiple flight missions was not fully synchronized due to variations in flight paths, 
+        lighting conditions, and on-site constraints. To address this, Ground Control Points (GCPs) were applied alongside an automated Python-based alignment workflow,
+        ensuring consistent georeferencing and reliable elevation accuracy across all datasets</li>
     </ul>
-    <h5 class="more-info-subtitle">Visualisasi:</h5>
+    <h5 class="more-info-subtitle">Visualization :</h5>
     <ul class="list-unstyled">
-        <li><b>Challenge:</b> Ukuran file WebGIS terlalu besar.</li>
-        <li><b>Solution:</b> Melakukan tiling dan kompresi data.</li>
+        <li> A key challenge in this project was the exceptionally large file sizes of the orthomosaic, DSM, and DEM outputs, 
+        which made them difficult to load and visualize smoothly on a WebGIS platform. To overcome this, raster tiling, compression, and layer optimization techniques were applied,
+        effectively reducing file size while preserving visual quality and enabling fast, responsive WebGIS performance.</li>
     </ul>
     <h3 class="more-info-title">Results/Conclusion</h3>
-    <p>Hasilnya, klien dapat memonitor aset mereka secara real-time melalui platform WebGIS yang responsif, mengurangi biaya survei lapangan hingga 40%.</p>
+    <p>The project successfully delivered a high-resolution orthomosaic (2.1 cm/pixel), DSM, and DEM with reliable accuracy for topographic and construction-related analyses. 
+    After optimization, all spatial layers were integrated into a responsive WebGIS platform, 
+    enabling the client to monitor site conditions in real time and streamline decision-making throughout the development process.</p>
     `
 },
 
@@ -37,49 +41,25 @@ const allProjects = {
 "project2": {
     mediaType: "video",
     client: "PT Moya Indonesia",
-    services: "Product Design, and Development",
+    services: "Videography",
     videoUrl: "https://www.youtube.com/embed/ScQllP5L6HE",
     webUrl: "https://www.google.com/maps/d/u/0/viewer?mid=1U17hBxpj1fRdctK1vZIwymRZa-h4c-k&ll=-7.1674715247373255%2C111.87734117480468&z=10", 
-    overview: "Web design encompasses the process of creating and designing websites It involves a combination of different skills and disciplines to produce a visually appealing and user-friendly website. Here's an overview of key aspects of web design.",
+    overview: "This project involved conducting an aerial and ground-based site visit along several segments of the Bengawan Solo River, where a series of Micro Hydropower Plant (PLTM) developments, water gates, and agricultural irrigation channels were being constructed. The objective was to document site conditions, monitor construction progress, and provide visual insights for engineering evaluation and project planning. High-quality aerial footage and structured documentation were produced to support decision-making across the development phases.",
     img1: "assets/img/projects/project-details-2.png",
     img2: "assets/img/projects/project-details-3.png",
     mainImageUrl: null,
     
     detailsHtml: `
     <h3 class="more-info-title">Challenges</h3>
-    <p>Web design comes with its own set of challenges, ranging from technical issues to user
-        experience considerations. Here are some common challenges faced by web designers. Web design
-        encompasses the process of creating and designing websites It involves a combination of
-        different skills and disciplines to produce a visually appealing and user-friendly website.
-        Here's an overview of key aspects of web design.</p>
-    <h5 class="more-info-subtitle">Responsive Design:</h5>
-    <ul class="list-unstyled">
-        <li>
-        <b>Challenge:</b> Ensuring that a website looks and functions well on various devices and
-        screen
-        sizes.
-        </li>
-        <li>
-        <b>Solution:</b> Use responsive design techniques, such as flexible grids and media queries.
-        </li>
-    </ul>
-    <h5 class="more-info-subtitle">Browser Compatibility:
-    </h5>
-    <ul class="list-unstyled">
-        <li>
-        <b>Challenge:</b> Different browsers may interpret code differently, leading to
-        inconsistencies
-        in the website's appearance.
-        </li>
-        <li>
-        <b>Solution:</b> Test the website on multiple browsers and use compatibility libraries or
-        polyfills when necessary.
-        </li>
-    </ul>
-    <h3 class="more-info-title">Results/Conclusion</h3>
-    <p>The website design and development for FlexiFlow successfully achieved its objectives, leading
-        to increased user engagement, improved conversion rates, and positive feedback from the target
-        audience.</p>
+    <p>During the site assessment, the team encountered several challenges related to geographical accessibility and environmental variability. 
+    Some construction points were located in narrow or hard-to-reach areas along the riverbank, requiring careful flight planning and precise 
+    maneuvering to capture stable and comprehensive footage. Weather fluctuations and inconsistent lighting also posed challenges for maintaining visual quality. 
+    Despite these conditions, the data collection process was optimized through controlled flight paths and systematic recording strategies.</p>
+    <h3 class="more-info-title">Results</h3>
+    <p>The site visit successfully delivered clear and detailed visual documentation of the ongoing PLTM construction, 
+    river structures, water gates, and irrigation channels. The collected footage provided stakeholders with valuable insights into current progress, 
+    potential risks, and areas requiring further engineering attention. The outputs significantly improved situational awareness and supported faster, 
+    more informed decision-making for project continuation.</p>
     `
 },
 
