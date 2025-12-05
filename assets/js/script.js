@@ -10,6 +10,7 @@ const allProjects = {
     videoUrl: null,
     webUrl: "https://monitoring-project-rho.vercel.app",
     overview: "The Orthophoto Nirwana Hill Serpong project involved aerial data acquisition over an 18-hectare area using a DJI Phantom 4 Pro V2. The flight mission was planned with a structured mapping strategy to ensure optimal overlap and high-quality photogrammetry results. The project produced a 2.1 cm/pixel orthomosaic, along with a Digital Surface Model (DSM) and Digital Elevation Model (DEM) to support topographic analysis, construction planning, and site monitoring.",
+    extraLargeImg: "assets/img/projects/project-1.png",
     img1: "assets/img/projects/NirwanaHill1.png", 
     img2: "assets/img/projects/NirwanaHill2.png", 
     mainImageUrl: "assets/img/projects/NirwanaHill.png",
@@ -30,7 +31,7 @@ const allProjects = {
         which made them difficult to load and visualize smoothly on a WebGIS platform. To overcome this, raster tiling, compression, and layer optimization techniques were applied,
         effectively reducing file size while preserving visual quality and enabling fast, responsive WebGIS performance.</li>
     </ul>
-    <h3 class="more-info-title">Results/Conclusion</h3>
+    <h3 class="more-info-title">Results</h3>
     <p>The project successfully delivered a high-resolution orthomosaic (2.1 cm/pixel), DSM, and DEM with reliable accuracy for topographic and construction-related analyses. 
     After optimization, all spatial layers were integrated into a responsive WebGIS platform, 
     enabling the client to monitor site conditions in real time and streamline decision-making throughout the development process.</p>
@@ -45,6 +46,7 @@ const allProjects = {
     videoUrl: "https://www.youtube.com/embed/ScQllP5L6HE",
     webUrl: "https://www.google.com/maps/d/u/0/viewer?mid=1U17hBxpj1fRdctK1vZIwymRZa-h4c-k&ll=-7.1674715247373255%2C111.87734117480468&z=10", 
     overview: "This project involved conducting an aerial and ground-based site visit along several segments of the Bengawan Solo River, where a series of Micro Hydropower Plant (PLTM) developments, water gates, and agricultural irrigation channels were being constructed. The objective was to document site conditions, monitor construction progress, and provide visual insights for engineering evaluation and project planning. High-quality aerial footage and structured documentation were produced to support decision-making across the development phases.",
+    extraLargeImg: "assets/img/projects/project-1.png",
     img1: "assets/img/projects/project-details-2.png",
     img2: "assets/img/projects/project-details-3.png",
     mainImageUrl: null,
@@ -249,6 +251,13 @@ $(document).ready(function () {
         $('#project-overview').text(projectData.overview);
         $('#project-img1').attr('src', projectData.img1);
         $('#project-img2').attr('src', projectData.img2);
+
+        if (projectData.extraLargeImg) {
+        $('#project-large-img').attr('src', projectData.extraLargeImg).show();
+        } else {
+            $('#project-large-img').hide();
+        }
+
         
 // --- ISI KONTEN HTML (CHALLENGES/RESULTS) ---
         $('#project-details-content').html(projectData.detailsHtml);
