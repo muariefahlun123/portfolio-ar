@@ -1811,10 +1811,9 @@ p {
 	min-height: 0 !important;
 }
 
-/* Ukuran map fix (sedang) */
 #projectsMap{
 	width: 100% !important;
-	height: 360px !important;      /* kamu bisa ubah 320-420px */
+	height: 360px !important;   
 	max-height: 360px !important;
 	border-radius: 12px;
 	overflow: hidden;
@@ -1875,6 +1874,12 @@ p {
 
 .portfolio-details-text .overview p b {
 	color: var(--black);
+}
+#project-client,
+#project-services {
+    font-size: 18px !important;
+    font-weight: 500;
+    line-height: 1.3;
 }
 
 .portfolio-details-area .inner-images {

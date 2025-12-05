@@ -10,6 +10,7 @@ const allProjects = {
     videoUrl: null,
     webUrl: "https://monitoring-project-rho.vercel.app",
     overview: "The Orthophoto Nirwana Hill Serpong project involved aerial data acquisition over an 18-hectare area using a DJI Phantom 4 Pro V2. The flight mission was planned with a structured mapping strategy to ensure optimal overlap and high-quality photogrammetry results. The project produced a 2.1 cm/pixel orthomosaic, along with a Digital Surface Model (DSM) and Digital Elevation Model (DEM) to support topographic analysis, construction planning, and site monitoring.",
+    date: "Nov-Des 2025",
     extraLargeImg: "assets/img/projects/project-1.png",
     img1: "assets/img/projects/NirwanaHill1.png", 
     img2: "assets/img/projects/NirwanaHill2.png", 
@@ -46,6 +47,7 @@ const allProjects = {
     videoUrl: "https://www.youtube.com/embed/ScQllP5L6HE",
     webUrl: "https://www.google.com/maps/d/u/0/viewer?mid=1U17hBxpj1fRdctK1vZIwymRZa-h4c-k&ll=-7.1674715247373255%2C111.87734117480468&z=10", 
     overview: "This project involved conducting an aerial and ground-based site visit along several segments of the Bengawan Solo River, where a series of Micro Hydropower Plant (PLTM) developments, water gates, and agricultural irrigation channels were being constructed. The objective was to document site conditions, monitor construction progress, and provide visual insights for engineering evaluation and project planning. High-quality aerial footage and structured documentation were produced to support decision-making across the development phases.",
+    date: "Jul 2025",
     extraLargeImg: "assets/img/projects/project-1.png",
     img1: "assets/img/projects/project-details-2.png",
     img2: "assets/img/projects/project-details-3.png",
@@ -72,6 +74,7 @@ const allProjects = {
     videoUrl: null,
     webUrl: "https://link-ke-web-proyek-2.com",
     overview: "Ini adalah deskripsi singkat untuk proyek kedua. Ganti dengan overview Anda.",
+    date: "Jul 2025",
     img1: "assets/img/projects/project-details-2.png",
     img2: "assets/img/projects/project-details-3.png",
     mainImageUrl: "assets/img/projects/project-1.png", 
@@ -102,6 +105,7 @@ const allProjects = {
     videoUrl: null,
     webUrl: "https://link-ke-web-proyek-2.com",
     overview: "Ini adalah deskripsi singkat untuk proyek kedua. Ganti dengan overview Anda.",
+    date: "Jul 2025",
     img1: "assets/img/projects/project-details-2.png",
     img2: "assets/img/projects/project-details-3.png",
     mainImageUrl: "assets/img/projects/project-1.png",
@@ -131,6 +135,7 @@ const allProjects = {
     videoUrl: null,
     webUrl: "https://link-ke-web-proyek-2.com",
     overview: "Ini adalah deskripsi singkat untuk proyek kedua. Ganti dengan overview Anda.",
+    date: "Jul 2025",
     img1: "assets/img/projects/project-details-2.png", 
     img2: "assets/img/projects/project-details-3.png", 
     mainImageUrl: "assets/img/projects/project-1.png",
@@ -152,7 +157,6 @@ const allProjects = {
     `
 },
 
-
 "project6": {
     mediaType: "image",
     client: "Klien Proyek 6",
@@ -160,6 +164,7 @@ const allProjects = {
     videoUrl: null, 
     webUrl: "https://link-ke-web-proyek-2.com",
     overview: "Ini adalah deskripsi singkat untuk proyek kedua. Ganti dengan overview Anda.",
+    date: "Jul 2025",
     img1: "assets/img/projects/project-details-2.png", 
     img2: "assets/img/projects/project-details-3.png",
     mainImageUrl: "assets/img/projects/project-1.png",
@@ -257,8 +262,12 @@ $(document).ready(function () {
         } else {
             $('#project-large-img').hide();
         }
+        if (projectData.date) {
+        $("#project-date-text").text(projectData.date).show();
+        } else {
+            $(".project-date").hide();
+        }   
 
-        
 // --- ISI KONTEN HTML (CHALLENGES/RESULTS) ---
         $('#project-details-content').html(projectData.detailsHtml);
 		
