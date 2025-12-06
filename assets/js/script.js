@@ -100,7 +100,7 @@ const allProjects = {
 
 "project4": {
     mediaType: "image", 
-    client: "Klien Proyek 4",
+    client: "PT Buckingham Holding Indonesia",
     services: "WebGIS, Photogrammetry",
     videoUrl: null,
     webUrl: "https://link-ke-web-proyek-2.com",
@@ -185,7 +185,67 @@ const allProjects = {
     <p>Hasilnya, klien dapat memonitor aset mereka secara real-time melalui platform WebGIS yang responsif, mengurangi biaya survei lapangan hingga 40%.</p>
     `
 	},
+"project7": {
+    mediaType: "image",
+    client: "Klien Proyek 7",
+    services: "WebGIS, Photogrammetry",
+    videoUrl: null, 
+    webUrl: "https://link-ke-web-proyek-2.com",
+    overview: "Ini adalah deskripsi singkat untuk proyek kedua. Ganti dengan overview Anda.",
+    date: "Jul 2025",
+    img1: "assets/img/projects/project-details-2.png", 
+    img2: "assets/img/projects/project-details-3.png",
+    mainImageUrl: "assets/img/projects/project-1.png",
+    detailsHtml: `
+    <h3 class="more-info-title">Challenges</h3>
+    <p>Tantangan untuk Proyek 2 SANGAT BERBEDA. Kami harus mengintegrasikan data drone...</p>
+    <h5 class="more-info-subtitle">Integrasi Data:</h5>
+    <ul class="list-unstyled">
+        <li><b>Challenge:</b> Data drone dari berbagai penerbangan tidak sinkron.</li>
+        <li><b>Solution:</b> Menggunakan script Python untuk otomatisasi dan GCP terukur.</li>
+    </ul>
+    <h5 class="more-info-subtitle">Visualisasi:</h5>
+    <ul class="list-unstyled">
+        <li><b>Challenge:</b> Ukuran file WebGIS terlalu besar.</li>
+        <li><b>Solution:</b> Melakukan tiling dan kompresi data.</li>
+    </ul>
+    <h3 class="more-info-title">Results/Conclusion</h3>
+    <p>Hasilnya, klien dapat memonitor aset mereka secara real-time melalui platform WebGIS yang responsif, mengurangi biaya survei lapangan hingga 40%.</p>
+    `
+	},
+
+"project8": {
+    mediaType: "image",
+    client: "Klien Proyek 7",
+    services: "WebGIS, Photogrammetry",
+    videoUrl: null, 
+    webUrl: "https://link-ke-web-proyek-2.com",
+    overview: "Ini adalah deskripsi singkat untuk proyek kedua. Ganti dengan overview Anda.",
+    date: "Jul 2025",
+    img1: "assets/img/projects/project-details-2.png", 
+    img2: "assets/img/projects/project-details-3.png",
+    mainImageUrl: "assets/img/projects/project-1.png",
+    detailsHtml: `
+    <h3 class="more-info-title">Challenges</h3>
+    <p>Tantangan untuk Proyek 2 SANGAT BERBEDA. Kami harus mengintegrasikan data drone...</p>
+    <h5 class="more-info-subtitle">Integrasi Data:</h5>
+    <ul class="list-unstyled">
+        <li><b>Challenge:</b> Data drone dari berbagai penerbangan tidak sinkron.</li>
+        <li><b>Solution:</b> Menggunakan script Python untuk otomatisasi dan GCP terukur.</li>
+    </ul>
+    <h5 class="more-info-subtitle">Visualisasi:</h5>
+    <ul class="list-unstyled">
+        <li><b>Challenge:</b> Ukuran file WebGIS terlalu besar.</li>
+        <li><b>Solution:</b> Melakukan tiling dan kompresi data.</li>
+    </ul>
+    <h3 class="more-info-title">Results/Conclusion</h3>
+    <p>Hasilnya, klien dapat memonitor aset mereka secara real-time melalui platform WebGIS yang responsif, mengurangi biaya survei lapangan hingga 40%.</p>
+    `
+	},
+
 };
+
+
 
 // ================================================================================== KODE FUNGSI UTAMA  =================================================================================//
 
@@ -249,7 +309,6 @@ $(document).ready(function () {
         });
     }
 
-// --- ISI SISA DATA ---
         $('#project-client').text(projectData.client);
         $('#project-services').text(projectData.services);
         $('#project-web-url').attr('href', projectData.webUrl);
@@ -267,11 +326,8 @@ $(document).ready(function () {
         } else {
             $(".project-date").hide();
         }   
-
-// --- ISI KONTEN HTML (CHALLENGES/RESULTS) ---
         $('#project-details-content').html(projectData.detailsHtml);
 		
-
 // ========================================================================= LOGIKA BARU UNTUK TOMBOL PREV/NEXT ======================================================================//
 
     const prevButton = $('#prev-project-btn');
@@ -462,21 +518,20 @@ const googleStreet = L.tileLayer(
 
 const esriSatellite = L.tileLayer(
     "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-    { maxZoom: 19, 
-    attribution: "" }
+    { 
+    maxZoom: 19, 
+    attribution: "" 
+    }
 );
 
-
-// =================== INIT MAP ===================
 const map = L.map("projectsMap", {
     zoomControl: true,
     scrollWheelZoom: true,
-    minZoom: 2,
-    maxZoom: 4.5,
+    minZoom: 3,
+    maxZoom: 5,
     layers: [esriSatellite], 
 });
 
-  // =================== MARKERS ===================
 const markers = projectLocations.map((p) =>
     L.marker([p.lat, p.lng]).bindPopup(`
         <b>${p.title}</b><br/>
@@ -485,7 +540,6 @@ const markers = projectLocations.map((p) =>
     );
 const markerGroup = L.layerGroup(markers).addTo(map);
 
-// Auto zoom ke semua marker (ini juga jadi tampilan awal)
 if (projectLocations.length > 0) {
     const bounds = L.latLngBounds(projectLocations.map((p) => [p.lat, p.lng]));
     map.fitBounds(bounds, { padding: [30, 30] });
@@ -501,7 +555,7 @@ const baseMaps = {
 };
 
 const overlays = {
-    "Project Locations": markerGroup,
+    "All Project": markerGroup,
 };
 
 L.control.layers(baseMaps, overlays, {
