@@ -11,7 +11,7 @@ const allProjects = {
     webUrl: "https://monitoring-project-rho.vercel.app",
     overview: "The Orthophoto Nirwana Hill Serpong project involved aerial data acquisition over an 18-hectare area using a DJI Phantom 4 Pro V2. The flight mission was planned with a structured mapping strategy to ensure optimal overlap and high-quality photogrammetry results. The project produced a 2.1 cm/pixel orthomosaic, along with a Digital Surface Model (DSM) and Digital Elevation Model (DEM) to support topographic analysis, construction planning, and site monitoring.",
     date: "Nov-Des 2025",
-    extraLargeImg: "assets/img/projects/project-1.png",
+    extraLargeImg: "assets/img/projects/project_nh.png",
     img1: "assets/img/projects/NirwanaHill1.png", 
     img2: "assets/img/projects/NirwanaHill2.png", 
     mainImageUrl: "assets/img/projects/NirwanaHill.png",
@@ -482,16 +482,17 @@ window.addEventListener("load", function () {
     if (!mapContainer) return;
 
 const projectLocations = [
-    { id: "project1", title: "Remote Pilot & Data Processing - Data Acquisition For Monitoring Project", lat: -6.448984023913493, lng: 106.71137074319215 },
-    { id: "project2", title: "Remote Pilot - Videography Bengawan Solo Dam", lat: -7.5613071988612335, lng: 110.76902383830956 },
-    { id: "project3", title: "AIMug - Aceh Project", lat: 4.271756723904168, lng: 97.2123131856845 },
-    { id: "project4", title: "AIMug - Banten Project", lat: -6.461306398269455, lng: 106.10899637341888 },
-    { id: "project5", title: "AIMug - IKN Project", lat: -0.9686449664052911, lng: 116.70212156224436 },
-    { id: "project6", title: "AIMug - KCIC Jakarta Project", lat: -6.245560436622241, lng: 106.88441557781445 },
-    { id: "project7", title: "AIMug - KCIC Bandung Project", lat: -6.9609381459180035, lng: 107.608829373577 },
+    { id: "project1", title: "Data Acquisition For Monitoring Project", lat: -6.448984023913493, lng: 106.71137074319215 },
+    { id: "project2", title: "Videography Bengawan Solo Dam", lat: -7.5613071988612335, lng: 110.76902383830956 },
+    { id: "project3", title: "Drone Survey for Coal Hauling Road Assessment", lat: 4.10197564601826,  lng: 96.19775929749161 },
+    { id: "project4", title: "Preliminary Site Analysis and Topographic Mapping", lat: -6.461306398269455, lng: 106.10899637341888 },
+    { id: "project5", title: "Aerial Mapping for Indonesia’s New Capital", lat: -0.9686449664052911, lng: 116.70212156224436 },
+    { id: "project6", title: "UAV Survey for High-Speed Railway Progress I", lat: -6.245560436622241, lng: 106.88441557781445 },
+    { id: "project7", title: "UAV Survey for High-Speed Railway Progress II", lat: -6.9609381459180035, lng: 107.608829373577 },
+    { id: "project8", title: "Landslide Detection Using rdNDVI and GEE", lat: -6.622041366560657, lng:106.47209995744603 },
+
 ];
 
-// =================== BASEMAPS ===================
 const osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     minZoom: 4,
     maxZoom: 19,
@@ -528,7 +529,7 @@ const map = L.map("projectsMap", {
     zoomControl: true,
     scrollWheelZoom: true,
     minZoom: 3,
-    maxZoom: 5,
+    maxZoom: 22,
     layers: [esriSatellite], 
 });
 
