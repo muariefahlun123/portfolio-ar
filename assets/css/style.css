@@ -1326,7 +1326,7 @@ p {
 }
 
 .content-box-card .awards-recognitions .awards-item .award-name .text .title {
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 500;
 	color: var(--black);
 	line-height: 1.2em;
@@ -1338,7 +1338,7 @@ p {
 }
 
 .content-box-card .awards-recognitions .awards-item .winner-tag .title {
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 500;
 	color: var(--black);
 	display: flex;
@@ -1347,7 +1347,7 @@ p {
 }
 
 .awards-item .year {
-    font-size: 12px !important;   /* kecilkan sesuai kebutuhan */
+    font-size: 13px !important;
     font-weight: 400;
     opacity: 0.9;
     display: block;
@@ -1366,7 +1366,7 @@ p {
 .content-box-card .awards-recognitions .awards-item .project-btn span {
 	background-color: var(--white);
 	color: var(--black);
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: 400;
 	line-height: 0.9rem;
 	padding: 8px 12px;

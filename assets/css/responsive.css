@@ -485,14 +485,14 @@
   }
 }
 
-/* ==========================================================
-   GLOBAL RESPONSIVE FIX FOR MOBILE
-   ========================================================== */
+/* ========================================================================
+            GLOBAL RESPONSIVE FIX FOR MOBILE
+========================================================================== */
 
 @media (max-width: 768px) {
 
 /* -------------------------------------------
-   1. Universal padding, margin, width
+1. Universal padding, margin, width
    ------------------------------------------- */
     section,
     .content-box-area,
@@ -512,7 +512,7 @@
     }
 
 /* -------------------------------------------
-   2. Force all Bootstrap columns to 1 row
+2. Force all Bootstrap columns to 1 row
    ------------------------------------------- */
     .row > [class*="col-"] {
         width: 100% !important;
@@ -521,7 +521,7 @@
     }
 
 /* -------------------------------------------
-   3. Make all images responsive
+3. Make all images responsive
    ------------------------------------------- */
     img {
         max-width: 100% !important;
@@ -535,8 +535,8 @@
     h1 { font-size: 26px !important; }
     h2 { font-size: 22px !important; }
     h3 { font-size: 20px !important; }
-    h4 { font-size: 18px !important; }
-    p  { font-size: 14px !important; line-height: 1.5 !important; }
+    h4 { font-size: 16px !important; }
+    p  { font-size: 16px !important; line-height: 1.5 !important; }
 
 /* -------------------------------------------
 5. Social Media Icons (your profile section)
@@ -617,6 +617,127 @@
         font-size: 13px !important;
     }
 
+@media (max-width: 768px) {
+    .content-box-card .awards-recognitions .awards-item .award-name {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 25px !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        margin-bottom: 10px !important; 
+    }
+
+    /* Icon */
+    .content-box-card .awards-recognitions .awards-item .award-name .icon {
+        flex: 0 0 auto !important;
+        width: 50px !important;
+        height: 50px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+    }
+
+    .content-box-card .awards-recognitions .awards-item .award-name .icon img {
+        width: 24px !important;
+        height: 24px !important;
+        object-fit: contain;
+    }
+
+    /* Naikkan teks certification + year */
+    .content-box-card .awards-recognitions .awards-item .award-name .text {
+        margin-top: -10px !important; /* ubah nilai sesuai selera, -4px atau -8px juga bisa */
+    }
+
+    /* Bisa juga sedikit naikkan icon agar lebih balance */
+    .content-box-card .awards-recognitions .awards-item .award-name .icon {
+        margin-top: 0px !important;
+    }
+}
+
+/* =========================================================//
+-------------------MOBILE LAYOUT CERCITICAT DAN COURCE
+========================================================== */
+@media (max-width: 768px) {
+
+  .content-box-card .awards-recognitions .awards-item {
+    display: grid !important;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "award-name award-name"
+      "winner-tag project-btn";
+    align-items: center;
+    row-gap: 6px !important;
+    padding: 20px !important;
+  }
+
+  .content-box-card .awards-recognitions .awards-item .award-name {
+    grid-area: award-name;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 25px !important;
+    width: 100% !important;
+    margin-bottom: 6px !important;
+  }
+
+  .content-box-card .awards-recognitions .awards-item .award-name .icon {
+    flex: 0 0 auto;
+    width: 50px !important;
+    height: 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+
+  .content-box-card .awards-recognitions .awards-item .award-name .icon img {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  /* Naikkan text "Pilot Drone | Certification" */
+  .content-box-card .awards-recognitions .awards-item .award-name .text {
+    margin-top: -6px !important;
+  }
+
+  /* ====== 3. TAHUN (LEFT AREA) ====== */
+  .content-box-card .awards-recognitions .awards-item .winner-tag {
+    grid-area: winner-tag;
+    width: auto !important;
+    margin: 0 !important;
+    margin-left: 70px !important; 
+  }
+
+  .content-box-card .awards-recognitions .awards-item .winner-tag .title {
+    display: flex;
+    align-items: center;
+    gap: 4px !important;
+    font-size: 14px !important;
+  }
+
+  .content-box-card .awards-recognitions .awards-item .winner-tag .title .icon {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  /* ====== 4. CERTIFICATES BUTTON (RIGHT AREA) ====== */
+  .content-box-card .awards-recognitions .awards-item .project-btn {
+    grid-area: project-btn;
+    justify-self: end;
+    margin-top: -4px !important;
+    margin-right: 72px !important;
+  }
+
+  .content-box-card .awards-recognitions .awards-item .project-btn span {
+    font-size: 14px !important;
+    padding: 6px 12px !important;
+    margin-top: 2px !important;
+  }
+}
+
 /* -------------------------------------------
 8. Fix project card / portfolio layout
    ------------------------------------------- */
@@ -671,3 +792,5 @@
         margin-left: auto;
     }
 }
+
+
