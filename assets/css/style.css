@@ -576,7 +576,7 @@ p {
 .social-media-icon ul {
     display: flex !important;
     flex-wrap: nowrap !important;
-    gap: 18px !important;
+    gap: 10px !important;
     padding: 0 !important;
     margin: 0 !important;
     align-items: center !important;
