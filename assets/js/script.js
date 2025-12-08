@@ -69,11 +69,11 @@ const allProjects = {
 
 "project3": {
     mediaType: "image", 
-    client: "Klien Proyek 3",
-    services: "WebGIS, Photogrammetry",
+    client: "PT Ajis Putra Hasana ",
+    services: "Data Acquisition, Processing Data",
     videoUrl: null,
     webUrl: "https://link-ke-web-proyek-2.com",
-    overview: "Ini adalah deskripsi singkat untuk proyek kedua. Ganti dengan overview Anda.",
+    overview: "This project involved drone-based data acquisition for the preliminary planning phase of a coal hauling road, which serves as the main transportation route for coal delivery from the mining site to the port. The total planned length of the hauling road is approximately 25 km, with Phase 1 acquisition successfully covering about 15 km. The data acquisition corridor was designed with a total width of 150 meters, consisting of the actual road width of 100 meters and an additional 25-meter buffer on both the left and right sides. The final outputs of this project include high-resolution orthophotos, Digital Surface Models (DSM), Digital Terrain Models (DTM), and contour data, which serve as the primary basis for topographic analysis, route alignment, and earthwork estimation.",
     date: "Jul 2025",
     img1: "assets/img/projects/project-details-2.png",
     img2: "assets/img/projects/project-details-3.png",
@@ -82,78 +82,106 @@ const allProjects = {
 
     detailsHtml: `
 	<h3 class="more-info-title">Challenges</h3>
-    <p>Tantangan untuk Proyek 2 SANGAT BERBEDA. Kami harus mengintegrasikan data drone...</p>
-    <h5 class="more-info-subtitle">Integrasi Data:</h5>
-    <ul class="list-unstyled">
-        <li><b>Challenge:</b> Data drone dari berbagai penerbangan tidak sinkron.</li>
-        <li><b>Solution:</b> Menggunakan script Python untuk otomatisasi dan GCP terukur.</li>
-    </ul>
-    <h5 class="more-info-subtitle">Visualisasi:</h5>
-    <ul class="list-unstyled">
-        <li><b>Challenge:</b> Ukuran file WebGIS terlalu besar.</li>
-        <li><b>Solution:</b> Melakukan tiling dan kompresi data.</li>
-    </ul>
-    <h3 class="more-info-title">Results/Conclusion</h3>
-    <p>Hasilnya, klien dapat memonitor aset mereka secara real-time melalui platform WebGIS yang responsif, mengurangi biaya survei lapangan hingga 40%.</p>
+        <p>The main challenges of this project included the extensive hauling road corridor length of 25 km (with 15 km successfully 
+            acquired in Phase 1), which required highly efficient and segmented flight mission planning; the dense oil palm plantation terrain, 
+            which limited available take-off and landing zones at several locations; the wide 150-meter mapping corridor, which significantly 
+            increased data volume and processing complexity; and the need to maintain consistent elevation accuracy in the DSM and DTM across a 
+            long and topographically variable corridor.
+        </p>
+    <h5 class="more-info-subtitle">Location</h5>
+        <ul class="list-unstyled">
+            <li>The project was conducted in Kuala Pesisir, Nagan Raya Regency, Aceh Province, Indonesia, centered around the 
+            coordinate point 4.101715, 96.197260. The hauling road corridor mainly traverses oil palm plantation areas, 
+            owned by both local communities and private companies, requiring precise mapping of land boundaries, existing access routes, 
+            and local terrain conditions along the entire corridor.
+            </li>
+        </ul>
+    <h3 class="more-info-title">Results</h3>
+        <p>
+            The project successfully delivered a detailed topographic dataset covering approximately 15 km of the hauling road corridor, 
+            including orthophotos, DSM, DTM, and contour maps, which now serve as a reliable foundation for technical road design. 
+            These results support terrain condition analysis, optimal route alignment selection, earthwork (cut & fill) volume estimation, 
+            and infrastructure planning toward the port, providing a strong technical basis for the next Detailed Engineering Design (DED) phase 
+            and ensuring that the full 25 km hauling road can be developed in an efficient, safe, and spatially precise manner.
+        </p>
     `
 },
 
 "project4": {
     mediaType: "image", 
-    client: "PT Buckingham Holding Indonesia",
-    services: "WebGIS, Photogrammetry",
+    client : "PT Buckingham Holding Indonesia",
+    services: "Data Acquisition, Processing Data",
     videoUrl: null,
     webUrl: "https://link-ke-web-proyek-2.com",
-    overview: "Ini adalah deskripsi singkat untuk proyek kedua. Ganti dengan overview Anda.",
-    date: "Jul 2025",
+    overview: "This project involved a preliminary site analysis and topographic mapping for a large-scale land development covering approximately 2,600 hectares in Lebak, Banten, commissioned by PT Buckingham Holding Indonesia. The main objective was to provide accurate and detailed physical land information including terrain, vegetation, water bodies, and natural features as the foundation for developing a comprehensive masterplan. Data acquisition was carried out using high-resolution drone technology, producing orthomosaic imagery, Digital Elevation Models (DEM), and 3D terrain models to support sustainable planning for residential, commercial, and recreational zones.",
+    date: "Agu 2024",
     img1: "assets/img/projects/project-details-2.png",
     img2: "assets/img/projects/project-details-3.png",
     mainImageUrl: "assets/img/projects/project-1.png",
     detailsHtml: `
     <h3 class="more-info-title">Challenges</h3>
-    <p>Tantangan untuk Proyek 3 SANGAT BERBEDA. Kami harus mengintegrasikan data drone...</p>
-    <h5 class="more-info-subtitle">Integrasi Data:</h5>
-    <ul class="list-unstyled">
-        <li><b>Challenge:</b> Data drone dari berbagai penerbangan tidak sinkron.</li>
-        <li><b>Solution:</b> Menggunakan script Python untuk otomatisasi dan GCP terukur.</li>
-    </ul>
-    <h5 class="more-info-subtitle">Visualisasi:</h5>
-    <ul class="list-unstyled">
-        <li><b>Challenge:</b> Ukuran file WebGIS terlalu besar.</li>
-        <li><b>Solution:</b> Melakukan tiling dan kompresi data.</li>
-    </ul>
-    <h3 class="more-info-title">Results/Conclusion</h3>
-    <p>Hasilnya, klien dapat memonitor aset mereka secara real-time melalui platform WebGIS yang responsif, mengurangi biaya survei lapangan hingga 40%.</p>
+        <p>The primary challenge of this project was the vast survey area (2,600 hectares) combined with highly diverse topographic conditions,
+            including hills, forests, and water bodies. These variations required precise flight planning and advanced data processing to ensure consistent
+            elevation accuracy and reliable spatial representation. In addition, land suitability analysis had to carefully incorporate environmental 
+            sustainability considerations, such as protected areas, river systems, and natural vegetation, to ensure that the proposed development would not 
+            disrupt the surrounding ecosystem.
+        </p>
+    <h5 class="more-info-subtitle">Location</h5>
+        <ul class="list-unstyled">
+            <li>The project was conducted in Lebak Regency, Banten Province, Indonesia, a region characterized by highly diverse terrain consisting of hills, 
+            dense forest areas, river networks, and natural water bodies. The total project area spans approximately 2,600 hectares, 
+            making it one of the largest site analysis and masterplan development projects in the region. The complex topographic conditions and 
+            environmental sensitivity of the area required a high level of accuracy in spatial data acquisition and analysis to ensure that the development 
+            plan could be implemented efficiently while maintaining environmental sustainability.</li>
+        </ul>
+    <h3 class="more-info-title">Results</h3>
+        <p>The project successfully delivered highly detailed topographic maps, orthomosaic imagery, DEM, and 3D site models, 
+            which served as the foundation for developing a comprehensive masterplan for the entire 2,600-hectare area. 
+            The masterplan defined optimal zoning for residential, commercial, and recreational areas, as well as infrastructure networks including roads, 
+            utilities, and public transportation systems designed in harmony with the site’s natural landform. 
+            The final deliverables were presented through technical reports, interactive maps, and 3D visualizations, 
+            providing the client with accurate decision-making tools and supporting a development concept that is efficient, sustainable, 
+            and environmentally responsible.
+        </p>
     `
 },
 
-
 "project5": {
     mediaType: "image",
-    client: "Klien Proyek 5",
-    services: "WebGIS, Photogrammetry",
+    client: "Sekretariat Otorita IKN",
+    services: "Data Acquisition, Processing Data",
     videoUrl: null,
     webUrl: "https://link-ke-web-proyek-2.com",
-    overview: "Ini adalah deskripsi singkat untuk proyek kedua. Ganti dengan overview Anda.",
-    date: "Jul 2025",
+    overview: "This project involved providing mapping and monitoring services for the development of Ibu Kota Nusantara (IKN), Indonesia’s new capital city – Phase 1, using drone technology and AI-based data analysis. The project was commissioned by the Sekretariat Otorita Ibu Kota Nusantara (OIKN) as the government authority responsible for overseeing the development of the new capital. Periodic drone flights were conducted to capture high-resolution orthophotos, topographic data, Digital Elevation Models (DEM), and 3D site models. The collected data was utilized to monitor construction progress, regulatory compliance, and site safety in a comprehensive and continuous manner.",
+    date: "May 2024",
     img1: "assets/img/projects/project-details-2.png", 
     img2: "assets/img/projects/project-details-3.png", 
     mainImageUrl: "assets/img/projects/project-1.png",
     detailsHtml: `
     <h3 class="more-info-title">Challenges</h3>
-    <p>Tantangan untuk Proyek 4 SANGAT BERBEDA. Kami harus mengintegrasikan data drone...</p>
-    <h5 class="more-info-subtitle">Integrasi Data:</h5>
+        <p>The main challenges of this project included the large spatial coverage of the IKN development area, 
+            highly dynamic construction activities, and the massive volume of drone data generated from periodic monitoring flights. 
+            In addition, the project required high accuracy in detecting construction progress, regulatory deviations, and potential safety hazards. 
+            These complexities demanded the implementation of AI-based automation to ensure that progress tracking, compliance verification, 
+            and safety detection could be performed efficiently, consistently, and with high precision.
+        </p>
+    <h5 class="more-info-subtitle">Location</h5>
     <ul class="list-unstyled">
-        <li><b>Challenge:</b> Data drone dari berbagai penerbangan tidak sinkron.</li>
-        <li><b>Solution:</b> Menggunakan script Python untuk otomatisasi dan GCP terukur.</li>
+        <li>This project was conducted within the Ibu Kota Nusantara (IKN) development area, located in East Kalimantan Province, Indonesia. 
+            The site covers a vast area with highly diverse terrain, including forest regions, river networks, 
+            and open flatlands designated for large-scale infrastructure development. 
+            The extensive land coverage and dynamic construction activities made drone-based monitoring the most effective solution for acquiring fast, 
+            accurate, and up-to-date geospatial data.
+        </li>
     </ul>
-    <h5 class="more-info-subtitle">Visualisasi:</h5>
-    <ul class="list-unstyled">
-        <li><b>Challenge:</b> Ukuran file WebGIS terlalu besar.</li>
-        <li><b>Solution:</b> Melakukan tiling dan kompresi data.</li>
-    </ul>
-    <h3 class="more-info-title">Results/Conclusion</h3>
-    <p>Hasilnya, klien dapat memonitor aset mereka secara real-time melalui platform WebGIS yang responsif, mengurangi biaya survei lapangan hingga 40%.</p>
+    <h3 class="more-info-title">Results</h3>
+        <p>The project successfully delivered an integrated drone-based and AI-driven monitoring system capable of providing real-time insights into 
+        construction progress, regulatory compliance, and site safety conditions within the IKN development area. 
+        The results were presented in the form of technical reports, interactive maps, and 3D visualizations, 
+        enabling the Otorita IKN to make fast and accurate strategic decisions. This project demonstrates that the integration of drone technology, 
+        geospatial analysis, and artificial intelligence is highly effective in supporting the efficient, compliant, and 
+        safe development of large-scale national infrastructure projects.
+        </p>
     `
 },
 

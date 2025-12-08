@@ -446,7 +446,7 @@ p {
 }
 
 .profile-description {
-	max-height: 150px;
+	max-height: 160px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
@@ -454,6 +454,16 @@ p {
 	-webkit-box-orient: vertical;
 	
 }
+
+.profile-description {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+    display: block !important;
+    -webkit-line-clamp: unset !important;
+    -webkit-box-orient: unset !important;
+}
+
 
 .common-button-groups {
 	margin-top: 24px;
@@ -521,19 +531,19 @@ p {
 }
 
 .social-media-icon {
-	margin-top: 70px;
+	margin-top: 90px;
 }
 
 .social-media-icon ul {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	gap: 14px;
+	gap: 20px;
 }
 
 .social-media-icon ul li {
 	display: inline-block; 
-	margin-right: 0;
+	margin-right: 10;
 }
 
 .social-media-icon ul li a {
@@ -563,9 +573,49 @@ p {
 	filter: brightness(0) saturate(100%) invert(29%) sepia(87%) saturate(1469%) hue-rotate(190deg) brightness(97%) contrast(92%);
 }
 
+.social-media-icon ul {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 18px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    align-items: center !important;
+}
+
+.social-media-icon li {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Ukuran box icon agar tidak terlalu besar */
+.social-media-icon li a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 36px !important;
+    height: 36px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Ikon PNG / SVG */
+.social-media-icon img {
+    width: 20px !important;
+    height: 20px !important;
+    object-fit: contain !important;
+}
+
+/* Ikon Font Awesome */
+.social-media-icon i {
+    font-size: 20px !important;
+    line-height: 1 !important;
+}
+
 .card-projects .project-item .image {
 	background-color: var(--background);
-	padding: 24px;
+	padding: 12px;
+	margin-top: 10px !important;
 	padding-bottom: 0;
 	border-radius: 8px;
 	overflow: hidden;
@@ -1276,7 +1326,7 @@ p {
 }
 
 .content-box-card .awards-recognitions .awards-item .award-name .text .title {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 500;
 	color: var(--black);
 	line-height: 1.2em;
@@ -1288,12 +1338,19 @@ p {
 }
 
 .content-box-card .awards-recognitions .awards-item .winner-tag .title {
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 500;
 	color: var(--black);
 	display: flex;
 	align-items: center;
 	gap: 6px;
+}
+
+.awards-item .year {
+    font-size: 12px !important;   /* kecilkan sesuai kebutuhan */
+    font-weight: 400;
+    opacity: 0.9;
+    display: block;
 }
 
 .content-box-card .awards-recognitions .awards-item .winner-tag .title .icon {
@@ -1309,7 +1366,7 @@ p {
 .content-box-card .awards-recognitions .awards-item .project-btn span {
 	background-color: var(--white);
 	color: var(--black);
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 400;
 	line-height: 0.9rem;
 	padding: 8px 12px;
@@ -1610,9 +1667,9 @@ p {
 	display: none;
 }
 
-/*=============================
+/*==========================================================================================================================
 	07. Portfolio page CSS Start
-===============================*/
+=============================================================================================================================*/
 
 .portfolio-card .top-info {
 	display: block;
@@ -1681,7 +1738,7 @@ p {
 }
 
 .portfolio-area .portfolio-item .text .info .title {
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 500;
 	color: var(--black);
 	line-height: 1.3em;
@@ -1695,14 +1752,14 @@ p {
 }
 
 .portfolio-area .portfolio-item .text .info .subtitle {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.5em;
 	color: var(--light-black);
 }
 
 .portfolio-area .portfolio-item .text .visite-btn a {
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 400;
 	line-height: 1em;
 	color: var(--light-black);

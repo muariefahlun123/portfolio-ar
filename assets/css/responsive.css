@@ -484,3 +484,190 @@
     height: 64px;
   }
 }
+
+/* ==========================================================
+   GLOBAL RESPONSIVE FIX FOR MOBILE
+   ========================================================== */
+
+@media (max-width: 768px) {
+
+/* -------------------------------------------
+   1. Universal padding, margin, width
+   ------------------------------------------- */
+    section,
+    .content-box-area,
+    .container,
+    .card,
+    .profile-card,
+    .awards-item,
+    .project-card,
+    .portfolio-item,
+    .expert-box,
+    .services-card,
+    .experience-item {
+        padding: 16px !important;
+        margin: 0 !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+/* -------------------------------------------
+   2. Force all Bootstrap columns to 1 row
+   ------------------------------------------- */
+    .row > [class*="col-"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+
+/* -------------------------------------------
+   3. Make all images responsive
+   ------------------------------------------- */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block !important;
+    }
+
+/* -------------------------------------------
+4. Typography scale for mobile
+   ------------------------------------------- */
+    h1 { font-size: 26px !important; }
+    h2 { font-size: 22px !important; }
+    h3 { font-size: 20px !important; }
+    h4 { font-size: 18px !important; }
+    p  { font-size: 14px !important; line-height: 1.5 !important; }
+
+/* -------------------------------------------
+5. Social Media Icons (your profile section)
+   ------------------------------------------- */
+    .social-media-icon ul {
+        display: flex !important;
+        flex-wrap: wrap !important;        /* boleh turun baris */
+        justify-content: center !important;
+        gap: 25px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .social-media-icon li {
+        list-style: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .social-media-icon li a {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 32px !important;            /* ukuran lebih kecil */
+        height: 32px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .social-media-icon img {
+        width: 18px !important;
+        height: 18px !important;
+        object-fit: contain !important;
+    }
+
+    .social-media-icon i {
+        font-size: 18px !important;
+        line-height: 1 !important;
+    }
+
+/* -------------------------------------------
+6. Fix each card to avoid overflow
+   ------------------------------------------- */
+    .profile-card img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .profile-card .text {
+        text-align: left !important;
+    }
+.profile-card .image img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    max-height: none !important;
+}
+
+.profile-card .image {
+    height: auto !important;
+    overflow: visible !important;
+}
+
+/* -------------------------------------------
+7. Fix Certificates & Courses layout
+   ------------------------------------------- */
+    .awards-item {
+        padding: 14px !important;
+    }
+
+    .awards-item .title {
+        font-size: 16px !important;
+    }
+
+    .awards-item .year,
+    .awards-item p {
+        font-size: 13px !important;
+    }
+
+/* -------------------------------------------
+8. Fix project card / portfolio layout
+   ------------------------------------------- */
+    .project-card,
+    .portfolio-item {
+        width: 100% !important;
+    }
+
+    .project-card img,
+    .portfolio-item img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    
+
+/* -------------------------------------------
+9. Fix experience list spacing
+   ------------------------------------------- */
+    .experience-item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+/* -------------------------------------------
+10. Fix global flex items (icon/group)
+   ------------------------------------------- */
+    .d-flex,
+    .icon-group,
+    ul.icon-list {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .awards-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .winner-tag {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .project-btn {
+        margin-left: auto;
+    }
+}
