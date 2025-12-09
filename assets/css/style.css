@@ -827,6 +827,15 @@ p {
 	margin-top: 8px;
 }
 
+.dark .expertise-card .expertise-item .image {
+    background-color: #151515 !important;
+}
+
+.dark .expertise-card .expertise-item .text .title {
+    color: #fff !important;
+}
+
+
 
 /* === STYLE UTAMA === */
 .services-main {
@@ -1286,7 +1295,7 @@ p {
 }
 
 .winner-tag {
-    margin-left: 80px !important;
+    margin-left: 100px !important;
 }
 
 .content-box-card .awards-recognitions .awards-item {
@@ -1304,7 +1313,7 @@ p {
 .content-box-card .awards-recognitions .awards-item .award-name {
 	display: flex;
 	align-items: center;
-	gap: 24px;
+	gap: 20px;
 	max-width: 300px;
 	width: 100%;
 }
@@ -1326,7 +1335,7 @@ p {
 }
 
 .content-box-card .awards-recognitions .awards-item .award-name .text .title {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 500;
 	color: var(--black);
 	line-height: 1.2em;
@@ -1338,7 +1347,7 @@ p {
 }
 
 .content-box-card .awards-recognitions .awards-item .winner-tag .title {
-	font-size: 14px;
+	font-size: 13px;
 	font-weight: 500;
 	color: var(--black);
 	display: flex;
