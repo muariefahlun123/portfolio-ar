@@ -2,7 +2,7 @@
 
 const allProjects = {
 
-// Proyek  (Tipe: Gambar)
+// Proyek (Tipe: Gambar)
 "project1": {
     mediaType: "image",
     client: "Nirwana Hills Serpong",
@@ -75,6 +75,7 @@ const allProjects = {
     webUrl: "https://link-ke-web-proyek-2.com",
     overview: "This project involved drone-based data acquisition for the preliminary planning phase of a coal hauling road, which serves as the main transportation route for coal delivery from the mining site to the port. The total planned length of the hauling road is approximately 25 km, with Phase 1 acquisition successfully covering about 15 km. The data acquisition corridor was designed with a total width of 150 meters, consisting of the actual road width of 100 meters and an additional 25-meter buffer on both the left and right sides. The final outputs of this project include high-resolution orthophotos, Digital Surface Models (DSM), Digital Terrain Models (DTM), and contour data, which serve as the primary basis for topographic analysis, route alignment, and earthwork estimation.",
     date: "Jul 2025",
+    extraLargeImg: "assets/img/projects/project-1.png",
     img1: "assets/img/projects/project-details-2.png",
     img2: "assets/img/projects/project-details-3.png",
     mainImageUrl: "assets/img/projects/project-1.png", 
