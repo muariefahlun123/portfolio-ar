@@ -187,87 +187,119 @@ const allProjects = {
 
 "project6": {
     mediaType: "image",
-    client: "Klien Proyek 6",
-    services: "WebGIS, Photogrammetry",
+    client: " CDJO Consortium The Construction",
+    services: "Data Acquisition, Photogrammetry",
     videoUrl: null, 
     webUrl: "https://link-ke-web-proyek-2.com",
-    overview: "Ini adalah deskripsi singkat untuk proyek kedua. Ganti dengan overview Anda.",
+    overview: "This project involved construction monitoring of the Jakarta–Bandung High-Speed Railway at the Jakarta initial segment, focused on the Halim High-Speed Railway Station area. Monitoring activities were conducted using an integration of drone technology, satellite imagery, computer vision, and machine learning to ensure construction progress remained on schedule, complied with design specifications, and met safety standards. Spatial data were periodically combined to generate time-series 3D models for continuous progress visualization.",
     date: "Jul 2025",
     img1: "assets/img/projects/project-details-2.png", 
     img2: "assets/img/projects/project-details-3.png",
     mainImageUrl: "assets/img/projects/project-1.png",
     detailsHtml: `
     <h3 class="more-info-title">Challenges</h3>
-    <p>Tantangan untuk Proyek 2 SANGAT BERBEDA. Kami harus mengintegrasikan data drone...</p>
-    <h5 class="more-info-subtitle">Integrasi Data:</h5>
+        <p>
+            The main challenges in this segment included the high density of the urban environment, 
+            limited drone maneuvering space due to active buildings and infrastructure, and simultaneous 
+            construction activities at multiple locations. In addition, high-accuracy object detection was 
+            required to identify construction elements such as pillars, rail tracks, and heavy equipment 
+            under highly dynamic field conditions
+        </p>
+    <h5 class="more-info-subtitle">Location</h5>
     <ul class="list-unstyled">
-        <li><b>Challenge:</b> Data drone dari berbagai penerbangan tidak sinkron.</li>
-        <li><b>Solution:</b> Menggunakan script Python untuk otomatisasi dan GCP terukur.</li>
+        <li> 
+            The project is located at Halim High-Speed Railway Station, East Jakarta, DKI Jakarta, Indonesia, 
+            which serves as the main starting point of the Jakarta–Bandung High-Speed Railway corridor. 
+            This area is characterized by high urban density, active infrastructure networks, and intense 
+            construction activity, requiring highly precise and continuous monitoring.
+        </li>
+    
     </ul>
-    <h5 class="more-info-subtitle">Visualisasi:</h5>
-    <ul class="list-unstyled">
-        <li><b>Challenge:</b> Ukuran file WebGIS terlalu besar.</li>
-        <li><b>Solution:</b> Melakukan tiling dan kompresi data.</li>
-    </ul>
-    <h3 class="more-info-title">Results/Conclusion</h3>
-    <p>Hasilnya, klien dapat memonitor aset mereka secara real-time melalui platform WebGIS yang responsif, mengurangi biaya survei lapangan hingga 40%.</p>
+    <h3 class="more-info-title">Results</h3>
+        <p>
+            This project successfully delivered a drone-based construction monitoring system capable of 
+            detecting structural progress in near real time, identifying potential delays, and visualizing construction 
+            development through interactive dashboards and time-series 3D models. The monitoring results significantly supported 
+            CDJO in maintaining project timelines, construction quality, and safety compliance at the initial 
+            segment of the High-Speed Railway development.
+        </p>
     `
 	},
 "project7": {
     mediaType: "image",
-    client: "Klien Proyek 7",
-    services: "WebGIS, Photogrammetry",
+    client: "CDJO Consortium The Construction",
+    services: "Data Acquisition, Photogrammetry",
     videoUrl: null, 
     webUrl: "https://link-ke-web-proyek-2.com",
-    overview: "Ini adalah deskripsi singkat untuk proyek kedua. Ganti dengan overview Anda.",
+    overview: "This project focused on construction monitoring of the Jakarta–Bandung High-Speed Railway at the Bandung segment towards Tegalluar Station. Monitoring was conducted through the integration of periodic drone surveys, satellite imagery, computer vision, and machine learning to track the development of rail lines, pillars, station structures, and supporting facilities. The spatial datasets were integrated to generate periodic 3D construction progress models.",
     date: "Jul 2025",
     img1: "assets/img/projects/project-details-2.png", 
     img2: "assets/img/projects/project-details-3.png",
     mainImageUrl: "assets/img/projects/project-1.png",
     detailsHtml: `
     <h3 class="more-info-title">Challenges</h3>
-    <p>Tantangan untuk Proyek 2 SANGAT BERBEDA. Kami harus mengintegrasikan data drone...</p>
-    <h5 class="more-info-subtitle">Integrasi Data:</h5>
+        <p>
+            The main challenges in the Bandung–Tegalluar segment included the large and open construction area, 
+            rapidly changing construction progress, and the need for large-scale synchronization between 
+            drone and satellite datasets. In addition, monitoring activities also had to address social and environmental 
+            aspects, including community impact, workforce activities, and land-cover changes.
+        </p>
+    <h5 class="more-info-subtitle">Location</h5>
     <ul class="list-unstyled">
-        <li><b>Challenge:</b> Data drone dari berbagai penerbangan tidak sinkron.</li>
-        <li><b>Solution:</b> Menggunakan script Python untuk otomatisasi dan GCP terukur.</li>
+        <li>
+            The project is located in Bandung City and Tegalluar Area, Bandung Regency, West Java Province, Indonesia. 
+            This region is characterized by open development land, expanding residential areas, and newly built infrastructure, 
+            making it a strategic location as the terminal station of the Jakarta–Bandung High-Speed Railway.
+        </li>
     </ul>
-    <h5 class="more-info-subtitle">Visualisasi:</h5>
-    <ul class="list-unstyled">
-        <li><b>Challenge:</b> Ukuran file WebGIS terlalu besar.</li>
-        <li><b>Solution:</b> Melakukan tiling dan kompresi data.</li>
-    </ul>
-    <h3 class="more-info-title">Results/Conclusion</h3>
-    <p>Hasilnya, klien dapat memonitor aset mereka secara real-time melalui platform WebGIS yang responsif, mengurangi biaya survei lapangan hingga 40%.</p>
+    <h3 class="more-info-title">Results</h3>
+        <p>
+            This project successfully delivered a comprehensive construction monitoring system through the integration of interactive maps, 
+            technical reports, analytical dashboards, and time-based 3D models, enabling CDJO to accurately monitor rail and structural development, 
+            detect deviations from approved designs, anticipate technical and social constraints, and support fast, 
+            data-driven decision-making. The results demonstrate that the integration of drone technology and satellite imagery is 
+            highly effective in supporting the efficient, safe, and sustainable development of national-scale infrastructure projects.
+        </p>
     `
 	},
 
 "project8": {
     mediaType: "image",
-    client: "Klien Proyek 7",
-    services: "WebGIS, Photogrammetry",
+    client: "",
+    services: "Analysis Spatial",
     videoUrl: null, 
     webUrl: "https://link-ke-web-proyek-2.com",
-    overview: "Ini adalah deskripsi singkat untuk proyek kedua. Ganti dengan overview Anda.",
-    date: "Jul 2025",
+    overview: "This research develops a spatial analysis model to detect landslide areas using the Relative Different Normalized Difference Vegetation Index (rdNDVI) method, processed through the Google Earth Engine (GEE) platform. The study utilizes Sentinel-2A satellite imagery to identify significant vegetation density changes between pre-event and post-event periods as the primary indicator of landslide occurrences. By integrating remote sensing technology with field survey validation, this research aims to provide an effective and accurate detection method to assist the Regional Disaster Management Agency (BPBD) in mapping vulnerability and supporting improved disaster mitigation efforts in the future.",
+    date: "Mar 2023",
     img1: "assets/img/projects/project-details-2.png", 
     img2: "assets/img/projects/project-details-3.png",
     mainImageUrl: "assets/img/projects/project-1.png",
     detailsHtml: `
     <h3 class="more-info-title">Challenges</h3>
-    <p>Tantangan untuk Proyek 2 SANGAT BERBEDA. Kami harus mengintegrasikan data drone...</p>
-    <h5 class="more-info-subtitle">Integrasi Data:</h5>
+        <p>
+            The fundamental challenge addressed is the high level of disaster vulnerability in Bogor Regency, 
+            which recorded a landslide risk index score of 15.48 according to the 2021 IRBI data, attributed to 
+            geological conditions and extreme rainfall. Technically, the research faces the challenge of determining 
+            the most optimal slope threshold to accurately differentiate active landslide areas from other vegetation changes. 
+            Furthermore, this method was developed to overcome the limitations of conventional observations, which are often 
+            time-consuming and difficult to conduct in large, inaccessible disaster areas.
+        </p>
+    <h5 class="more-info-subtitle">Location</h5>
     <ul class="list-unstyled">
-        <li><b>Challenge:</b> Data drone dari berbagai penerbangan tidak sinkron.</li>
-        <li><b>Solution:</b> Menggunakan script Python untuk otomatisasi dan GCP terukur.</li>
-    </ul>
-    <h5 class="more-info-subtitle">Visualisasi:</h5>
-    <ul class="list-unstyled">
-        <li><b>Challenge:</b> Ukuran file WebGIS terlalu besar.</li>
-        <li><b>Solution:</b> Melakukan tiling dan kompresi data.</li>
-    </ul>
+        <li>
+            The study area focuses specifically on Sukajaya District, Bogor Regency, West Java, selected due to its relevance to 
+            the major landslide event that occurred on January 1, 2020. Geographically, this area is situated in highlands surrounded 
+            by mountains and hills, making it a zone highly susceptible to soil movement. The scope of the spatial analysis encompasses 
+            11 villages within the district to compare the extent of damage and land cover changes across the entire disaster-affected region.
+        </li>
     <h3 class="more-info-title">Results/Conclusion</h3>
-    <p>Hasilnya, klien dapat memonitor aset mereka secara real-time melalui platform WebGIS yang responsif, mengurangi biaya survei lapangan hingga 40%.</p>
+        <p>
+            The results indicate that Cileuksa Village and Pasir Madang Village were the most severely impacted areas, with the detected 
+            landslide coverage expanding significantly following the application of slope thresholds. Based on an accuracy assessment using 
+            30 field survey points, it was found that utilizing slope thresholds of 10 percent and 15 percent yielded the highest accuracy rate 
+            of 90%, with 27 points correctly detected. These findings demonstrate that the rdNDVI method with appropriate slope threshold settings 
+            is significantly more effective compared to analysis without a threshold, which only produced an accuracy of 66.7%.
+        </p>
     `
 	},
 
