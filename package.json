@@ -1,0 +1,8 @@
+{
+    "name": "portfolio-backend",
+    "version": "1.0.0",
+    "dependencies": {
+    "nodemailer": "^6.9.13",
+    "formidable": "^3.5.1"
+    }
+}
