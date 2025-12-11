@@ -2037,20 +2037,68 @@ p {
 	height: 100%;
 }
 
-
-
 /*=============================
-	09. Contact page CSS Start
+    09. Contact page CSS Start
 ===============================*/
 
-.leave-comments-area .comments-box .form-select {
-	border-radius: 8px;
-	padding: 16px 24px;
-	border: 1px solid var(--border);
+/* ====== INPUT, SELECT, TEXTAREA (Perbaikan Utama) ====== */
+.leave-comments-area .comments-box .form-control,
+.leave-comments-area .comments-box .form-select,
+.leave-comments-area .comments-box textarea {
+    background-color: #F3F4F6;
+    border: 1px solid #E5E7EB;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #111;
+    box-sizing: border-box;
 }
 
-.leave-comments-area .comments-box .form-select:focus {
-	border-color: var(--light-black);
+.leave-comments-area .comments-box .form-control:focus,
+.leave-comments-area .comments-box .form-select:focus,
+.leave-comments-area .comments-box textarea:focus {
+    border-color: #4A90E2;
+    box-shadow: 0 0 0 2px rgba(74,144,226,0.25);
+}
+
+.leave-comments-area .comments-box label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.leave-comments-area .comments-box .mb-4 {
+    margin-bottom: 20px !important;
+}
+
+.leave-comments-area .comments-box .form-select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" viewBox="0 0 24 24" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+}
+
+.ajax-response.error {
+    margin-top: 20px;
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgba(255, 0, 0, 0.1);
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.ajax-response.success {
+    margin-top: 20px;
+    color: green;
+    background-color: rgba(0, 128, 0, 0.1);
+    border: 1px solid rgba(0, 128, 0, 0.5);
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 10px 20px;
 }
 
 .contact-map-area {
@@ -2065,70 +2113,56 @@ p {
 	height: 100% !important;
 }
 
-.ajax-response.error {
-	margin-top: 20px;
-	color: red;
-	font-size: 14px;
-	font-weight: 500;
-	background-color: rgba(255, 0, 0, 0.1);
-	border: 1px solid rgba(255, 0, 0, 0.5);
-	border-radius: 8px;
-	padding: 10px 20px;
-}
-
-.ajax-response.success {
-	margin-top: 20px;
-	color: green;
-	background-color: rgba(0, 128, 0, 0.1);
-	border: 1px solid rgba(0, 128, 0, 0.5);
-	font-weight: 500;
-	font-size: 14px;
-	font-weight: 500;
-	border-radius: 8px;
-	padding: 10px 20px;
-}
-
-
-/*=============================
-	Styling untuk Tombol Submit Kontak
-===============================*/
-
 .leave-comments-area .comments-box .submit-btn {
-	background-color: var(--primary); /* Warna latar belakang utama */
-	border-radius: 8px; /* Sudut membulat */
-	padding: 16px 24px; /* Padding di dalam tombol */
-	font-size: 16px; /* Ukuran font */
-	font-weight: 600; /* Ketebalan font */
-	color: var(--white); /* Warna teks putih */
-	line-height: 1.2em; /* Tinggi baris */
-	border: none; /* Hapus border default */
-	cursor: pointer; /* Ubah kursor saat hover */
-	transition: var(--transision); /* Efek transisi halus */
-	display: inline-flex; /* Agar ikon sejajar */
-	align-items: center; /* Sejajarkan ikon dan teks */
-	gap: 8px; /* Jarak antara teks dan ikon */
+	background-color: var(--primary);
+	border-radius: 8px;
+	padding: 16px 24px;
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--white);
+	line-height: 1.2em;
+	border: none;
+	cursor: pointer;
+	transition: var(--transision);
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
 }
 
 .leave-comments-area .comments-box .submit-btn:hover {
-	background-color: #2563EB; /* Warna latar belakang saat hover (sedikit lebih gelap) */
+	background-color: #2563EB;
 }
 
 .leave-comments-area .comments-box .submit-btn .icon {
-	stroke: var(--white); /* Pastikan warna ikon sesuai */
+	stroke: var(--white);
 	width: 20px;
 	height: 20px;
 }
 
-/* Style Tombol Submit di Dark Theme */
-.dark-theme .leave-comments-area .comments-box .submit-btn {
-	/* Anda mungkin ingin menyesuaikan warna di dark theme jika perlu */
-	/* Contoh: background-color: var(--primary); (tetap sama) */
-	/* color: var(--white); (tetap sama) */
+.dark-theme .leave-comments-area .comments-box .form-control,
+.dark-theme .leave-comments-area .comments-box .form-select,
+.dark-theme .leave-comments-area .comments-box textarea {
+    background-color: #151515;
+    border: 1px solid #333;
+    color: #fff;
 }
 
-.dark-theme .leave-comments-area .comments-box .submit-btn:hover {
-	background-color: #2563EB; /* Warna hover tetap sama atau sesuaikan */
+.dark-theme .leave-comments-area .comments-box label {
+    color: #ddd;
 }
+
+.dark-theme .leave-comments-area .comments-box .form-control::placeholder,
+.dark-theme .leave-comments-area .comments-box textarea::placeholder {
+    color: #888;
+}
+
+/* ====== MAKE SEND BUTTON FULL WIDTH ====== */
+.leave-comments-area .comments-box .submit-btn {
+    width: 100% !important;        /* tombol jadi full width */
+    display: flex !important;      /* biar icon & teks tetap sejajar */
+    justify-content: center !important; /* teks & icon di tengah */
+}
+
 
 /*=============================
 	10. Footer CSS Start
