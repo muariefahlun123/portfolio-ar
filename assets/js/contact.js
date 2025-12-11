@@ -4,64 +4,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (contactForm) {
         contactForm.addEventListener("submit", async (e) => {
-            e.preventDefault(); // Mencegah reload halaman
-
-            // 1. Ambil data form (otomatis mendeteksi input text & file)
-            const formData = new FormData(e.target);
-
-            // 2. Atur UI Tombol (Loading State)
+            e.preventDefault();
             const submitBtn = e.target.querySelector(".submit-btn");
-            const originalBtnContent = submitBtn.innerHTML; // Simpan icon & text asli
+            const originalBtnText = submitBtn.innerHTML;
+
+            // Loading state
             submitBtn.disabled = true;
             submitBtn.innerHTML = 'Sending...';
+            if(responseMessage) responseMessage.style.display = 'none';
 
-            // 3. Bersihkan pesan error/sukses sebelumnya
-            if (responseMessage) {
-                responseMessage.classList.remove("success", "error");
-                responseMessage.style.display = "none";
-                responseMessage.innerText = "";
-            }
+            const formData = new FormData(e.target);
 
             try {
-                // 4. Kirim request ke Vercel Serverless Function
+                // Arahkan ke API Vercel
                 const res = await fetch("/api/send", {
                     method: "POST",
                     body: formData
-                    // Catatan: Jangan set header 'Content-Type' secara manual saat pakai FormData.
-                    // Browser akan otomatis mengaturnya untuk multipart/form-data.
                 });
 
                 const result = await res.json();
 
                 if (res.ok && result.success) {
-                    // --- SUKSES ---
-                    if (responseMessage) {
-                        responseMessage.classList.add("success");
-                        responseMessage.innerText = "Message and file sent successfully!";
-                        responseMessage.style.display = "block";
+                    if(responseMessage) {
+                        responseMessage.innerText = "Message sent successfully!";
+                        responseMessage.className = "ajax-response success"; // Pakai class CSS hijau
+                        responseMessage.style.display = 'block';
                     } else {
-                        alert("Message sent successfully!");
+                        alert("Success!");
                     }
-                    e.target.reset(); // Kosongkan form
+                    e.target.reset();
                 } else {
-                    // --- GAGAL DARI API ---
-                    throw new Error(result.error || "Failed to send message.");
+                    throw new Error(result.error || "Failed to send.");
                 }
-
             } catch (err) {
-                // --- ERROR JARINGAN / SERVER ---
                 console.error(err);
-                if (responseMessage) {
-                    responseMessage.classList.add("error");
+                if(responseMessage) {
                     responseMessage.innerText = "Error: " + err.message;
-                    responseMessage.style.display = "block";
+                    responseMessage.className = "ajax-response error"; // Pakai class CSS merah
+                    responseMessage.style.display = 'block';
                 } else {
                     alert("Error: " + err.message);
                 }
             } finally {
-                // 5. Kembalikan tombol ke kondisi semula
                 submitBtn.disabled = false;
-                submitBtn.innerHTML = originalBtnContent;
+                submitBtn.innerHTML = originalBtnText;
             }
         });
     }
