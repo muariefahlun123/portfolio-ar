@@ -272,9 +272,10 @@ const allProjects = {
     webUrl: "https://link-ke-web-proyek-2.com",
     overview: "This research develops a spatial analysis model to detect landslide areas using the Relative Different Normalized Difference Vegetation Index (rdNDVI) method, processed through the Google Earth Engine (GEE) platform. The study utilizes Sentinel-2A satellite imagery to identify significant vegetation density changes between pre-event and post-event periods as the primary indicator of landslide occurrences. By integrating remote sensing technology with field survey validation, this research aims to provide an effective and accurate detection method to assist the Regional Disaster Management Agency (BPBD) in mapping vulnerability and supporting improved disaster mitigation efforts in the future.",
     date: "Mar 2023",
-    img1: "assets/img/projects/project-details-2.png", 
-    img2: "assets/img/projects/project-details-3.png",
-    mainImageUrl: "assets/img/projects/project-1.png",
+    extraLargeImg: "assets/img/projects/rdNDVI-analyst.png",
+    img1: "assets/img/projects/post-pre-gee.png", 
+    img2: "assets/img/projects/post-pre-gee1.png",
+    mainImageUrl: "assets/img/projects/rdNDVI.png",
     detailsHtml: `
     <h3 class="more-info-title">Challenges</h3>
         <p>
@@ -285,15 +286,14 @@ const allProjects = {
             Furthermore, this method was developed to overcome the limitations of conventional observations, which are often 
             time-consuming and difficult to conduct in large, inaccessible disaster areas.
         </p>
-    <h5 class="more-info-subtitle">Location</h5>
-    <ul class="list-unstyled">
-        <li>
+    <h3 class="more-info-title">Location</h3>
+        <p>
             The study area focuses specifically on Sukajaya District, Bogor Regency, West Java, selected due to its relevance to 
             the major landslide event that occurred on January 1, 2020. Geographically, this area is situated in highlands surrounded 
             by mountains and hills, making it a zone highly susceptible to soil movement. The scope of the spatial analysis encompasses 
             11 villages within the district to compare the extent of damage and land cover changes across the entire disaster-affected region.
-        </li>
-    <h3 class="more-info-title">Results/Conclusion</h3>
+        </p>
+    <h3 class="more-info-title">Results</h3>
         <p>
             The results indicate that Cileuksa Village and Pasir Madang Village were the most severely impacted areas, with the detected 
             landslide coverage expanding significantly following the application of slope thresholds. Based on an accuracy assessment using 
