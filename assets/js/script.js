@@ -152,7 +152,7 @@ const allProjects = {
     client: "Sekretariat Otorita IKN",
     services: "Data Acquisition, Processing Data",
     videoUrl: null,
-    webUrl: "https://link-ke-web-proyek-2.com",
+    webUrl: "https://project-ikn.vercel.app/",
     overview: "This project involved providing mapping and monitoring services for the development of Ibu Kota Nusantara (IKN), Indonesia’s new capital city – Phase 1, using drone technology and AI-based data analysis. The project was commissioned by the Sekretariat Otorita Ibu Kota Nusantara (OIKN) as the government authority responsible for overseeing the development of the new capital. Periodic drone flights were conducted to capture high-resolution orthophotos, topographic data, Digital Elevation Models (DEM), and 3D site models. The collected data was utilized to monitor construction progress, regulatory compliance, and site safety in a comprehensive and continuous manner.",
     date: "May 2024",
     img1: "assets/img/projects/project-details-2.png", 
