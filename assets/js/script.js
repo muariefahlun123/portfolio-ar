@@ -515,25 +515,23 @@ $(".parent-container").magnificPopup({
 })(jQuery);
 
 function updateClockWidget() {
-	const now = new Date();
-let h = now.getHours();
-	const m = now.getMinutes();
-	const s = now.getSeconds();
-	const ampm = h >= 12 ? 'PM' : 'AM';
-	h = h % 12 || 12;
+    const now = new Date();
+    let h = now.getHours(); // Mengambil jam 0-23
+    const m = now.getMinutes();
+    const s = now.getSeconds();
+    // Baris format 12 jam (h = h % 12 || 12) dan ampm sudah dihapus/dikomentari.
 
-
-if (document.getElementById('hours')) {
-    document.getElementById('hours').textContent = String(h).padStart(2, '0');
-    document.getElementById('minutes').textContent = String(m).padStart(2, '0');
-    document.getElementById('seconds').textContent = String(s).padStart(2, '0');
-    document.getElementById('ampm').textContent = ampm;
-	}
+    if (document.getElementById('hours')) {
+        document.getElementById('hours').textContent = String(h).padStart(2, '0');
+        document.getElementById('minutes').textContent = String(m).padStart(2, '0');
+        document.getElementById('seconds').textContent = String(s).padStart(2, '0');
+    }
 }
 
+// Pastikan inisialisasi ini ada
 if (document.getElementById('hours')) {
-	setInterval(updateClockWidget, 1000);
-	updateClockWidget();
+    setInterval(updateClockWidget, 1000); // Mulai timer
+    updateClockWidget(); // Panggil pertama kali agar tidak 00:00:00 saat loading
 }
 
 // =================================================================================== PORTFOLIO MAP ===================================================================================//

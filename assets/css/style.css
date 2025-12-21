@@ -1008,27 +1008,13 @@ p {
 }
 
 .digital-clock {
-	font-size: 45px;
+	font-size: 40px;
 	font-weight: 600;
 	color: var(--primary);
-	letter-spacing: 3px;
-	margin-left: 18px; /* Tambahkan ini atau ubah nilainya */
+	letter-spacing: 5px;
+	margin-left: 15px;
 }
 
-
-.digital-clock {
-	font-size: 45px;
-	font-weight: 600;
-	color: var(--primary);
-	letter-spacing: 3px;
-}
-
-#ampm {
-	font-size: 19px;
-	vertical-align: super;
-	margin-left: 1px;
-	color: var(--primary);
-}
 
 .download-buttons {
 	margin-top: 24px;
