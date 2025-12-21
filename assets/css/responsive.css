@@ -863,3 +863,56 @@ EXPERTISE — MOBILE FIX
     }
 }
 
+@media (max-width: 768px) {
+
+  /* LI jadi baris horizontal */
+  .work-experiance-card .work-experiance-slider li {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+  }
+
+  /* DATE */
+  .work-experiance-card .work-experiance-slider li .date {
+    margin-right: 0 !important;
+    flex: 0 0 80px;
+  }
+
+  .work-experiance-card .work-experiance-slider li .date p {
+    font-size: var(--year-size, 10px);
+    white-space: nowrap;
+  }
+
+  /* INFO = logo + text sejajar kiri */
+  .work-experiance-card .work-experiance-slider li .info {
+    display: flex !important;
+    align-items: flex-start !important; /* 🔥 INI KUNCI */
+    gap: 10px;
+    flex: 1;
+  }
+
+  /* ICON */
+  .work-experiance-card .work-experiance-slider li .info .icon {
+    width: var(--logo-size, 36px);
+    height: var(--logo-size, 36px);
+    flex-shrink: 0;
+  }
+
+  /* TEXT */
+  .work-experiance-card .work-experiance-slider li .info .text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-experiance-card .work-experiance-slider li .info .text .title {
+    font-size: var(--title-size, 10px);
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  .work-experiance-card .work-experiance-slider li .info .text .subtitle {
+    font-size: var(--subtitle-size, 10px);
+    margin-top: 2px;
+  }
+}
