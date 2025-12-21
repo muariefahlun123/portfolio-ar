@@ -269,7 +269,7 @@ const allProjects = {
     client: "",
     services: "Analysis Spatial",
     videoUrl: null, 
-    webUrl: "https://link-ke-web-proyek-2.com",
+    webUrl: "https://webgis-sukajaya.vercel.app/",
     overview: "This research develops a spatial analysis model to detect landslide areas using the Relative Different Normalized Difference Vegetation Index (rdNDVI) method, processed through the Google Earth Engine (GEE) platform. The study utilizes Sentinel-2A satellite imagery to identify significant vegetation density changes between pre-event and post-event periods as the primary indicator of landslide occurrences. By integrating remote sensing technology with field survey validation, this research aims to provide an effective and accurate detection method to assist the Regional Disaster Management Agency (BPBD) in mapping vulnerability and supporting improved disaster mitigation efforts in the future.",
     date: "Mar 2023",
     extraLargeImg: "assets/img/projects/rdNDVI-analyst.png",
