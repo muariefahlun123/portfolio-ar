@@ -113,7 +113,7 @@ const allProjects = {
     client : "PT Buckingham Holding Indonesia",
     services: "Data Acquisition, Processing Data",
     videoUrl: null,
-    webUrl: "https://link-ke-web-proyek-2.com",
+    webUrl: "https://project-lebak-banten.vercel.app/",
     overview: "This project involved a preliminary site analysis and topographic mapping for a large-scale land development covering approximately 2,600 hectares in Lebak, Banten, commissioned by PT Buckingham Holding Indonesia. The main objective was to provide accurate and detailed physical land information including terrain, vegetation, water bodies, and natural features as the foundation for developing a comprehensive masterplan. Data acquisition was carried out using high-resolution drone technology, producing orthomosaic imagery, Digital Elevation Models (DEM), and 3D terrain models to support sustainable planning for residential, commercial, and recreational zones.",
     date: "Agu 2024",
     img1: "assets/img/projects/project-details-2.png",
