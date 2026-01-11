@@ -5,7 +5,7 @@ const allProjects = {
 // Proyek (Tipe: Gambar)
 "project1": {
     mediaType: "image",
-    client: "Nirwana Hills Serpong",
+    client: "PT Pulauintan",
     services: "Photogrammetry",
     videoUrl: null,
     webUrl: "https://monitoring-project-rho.vercel.app",
