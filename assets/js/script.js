@@ -4,17 +4,17 @@ const allProjects = {
 
 // Proyek (Tipe: Gambar)
 "project1": {
-    mediaType: "image",
+    mediaType: "video",
     client: "PT Pulauintan",
     services: "Photogrammetry",
-    videoUrl: null,
+    videoUrl: "https://www.youtube.com/embed/n8HKnZQ4UnA",
     webUrl: "https://monitoring-project-rho.vercel.app",
     overview: "The Orthophoto Nirwana Hill Serpong project involved aerial data acquisition over an 18-hectare area using a DJI Phantom 4 Pro V2. The flight mission was planned with a structured mapping strategy to ensure optimal overlap and high-quality photogrammetry results. The project produced a 2.1 cm/pixel orthomosaic, along with a Digital Surface Model (DSM) and Digital Elevation Model (DEM) to support topographic analysis, construction planning, and site monitoring.",
     date: "Nov 2025 - Jan 2026",
-    extraLargeImg: "assets/img/projects/project_nh.png",
+    extraLargeImg: "assets/img/projects/NirwanaHill.png",
     img1: "assets/img/projects/NirwanaHill1.png", 
     img2: "assets/img/projects/NirwanaHill2.png", 
-    mainImageUrl: "assets/img/projects/NirwanaHill.png",
+    mainImageUrl: null,
     
 
     detailsHtml: `
